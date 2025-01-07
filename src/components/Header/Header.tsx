@@ -52,7 +52,7 @@ export default function Header() {
               )}
               onClick={() => setShowMenu(false)}
             />
-            <div className="w-full  lg:w-[209] h-[43] flex  justify-center items-center gap-4 px-[10px]">
+            <div className="w-full  lg:w-[209px] h-[43px] flex  justify-center items-center gap-4 px-[10px]">
               <div className="py-[10px] px-4  text-nowrap capitalize">
                 sign up / in
               </div>

@@ -17,7 +17,7 @@ export default function Button({
       className={cn(
         "overflow-hidden rounded-full font-medium capitalize relative isolate group/button",
         "py-2 px-4 2xl:px-8",
-        "text-[13px] sm:text-base md:text-meduim 2xl:text-xl",
+        "text-[calc(13px+(20-13)*((clamp(390px,100vw,1512px)-390px)/(1512-390)))]",
         "duration-500 ease-in-out",
         {
           "support-hover:hover:shadow-sm support-hover:hover:shadow-black":

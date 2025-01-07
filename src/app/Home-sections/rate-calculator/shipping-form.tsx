@@ -26,7 +26,7 @@ export default function ShippingForm() {
       </div>
       <Button
         type="submit"
-        className="mx-auto block font-semibold bg-[#364772] text-white 2xl:text-base 2xl:w-[169px] 2xl:h-[42px]"
+        className="mx-auto block font-semibold bg-[#364772] text-white  2xl:w-[169px] 2xl:h-[42px] text-[calc(13px+(16-13)*((clamp(390px,100vw,1512px)-390px)/(1512-390)))]"
         animated
       >
         calculate now

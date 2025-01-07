@@ -24,6 +24,13 @@ export default {
         En: ['"Red Hat Display"', "serif"],
         Ar: ['"IBM Plex Sans Arabic"', "serif"],
       },
+      keyframes: {
+        progress: {
+          "0%": { backgroundSize: "0% 100%" },
+          "100%": { backgroundSize: "100% 100%" },
+        },
+      },
+      animation: { progress: "progress 2s ease-in-out infinite " },
     },
   },
   plugins: [],

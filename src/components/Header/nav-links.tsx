@@ -52,7 +52,7 @@ export default function NavLinks({ className, ...rest }: propType) {
       href={link.href}
       className={cn(
         "capitalize px-4 py-[10] font-normal  duration-300 text-nowrap",
-        "support-hover:hover:text-secondary-orange support-hover:hover:font-semibold border-2 border-black",
+        "support-hover:hover:text-secondary-orange support-hover:hover:font-semibold content-center inline-block",
         {
           "rounded-[10px] bg-active-link text-secondary-orange font-semibold":
             pathName === link.href && active,

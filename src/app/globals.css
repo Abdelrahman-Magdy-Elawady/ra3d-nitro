@@ -40,3 +40,7 @@ body {
     --page-y-padding: 20px; /*---y-padding in devices wider than mobile ---*/
   }
 }
+
+* {
+  border: 1px solid black;
+}

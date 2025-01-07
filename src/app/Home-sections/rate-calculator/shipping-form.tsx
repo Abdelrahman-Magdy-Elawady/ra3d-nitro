@@ -11,14 +11,17 @@ export default function ShippingForm() {
         <LabeledInput
           label={"shipping from"}
           input={
-            <SelectInput options={["riyadh", "jeddah"]} name="shipping-from" />
+            <SelectInput
+              options={["riyadh", "jeddah", "Mecca"]}
+              name="shipping-from"
+            />
           }
         />
         <LabeledInput
           label={"shipping to"}
           input={
             <SelectInput
-              options={["riyadh", "jeddah", "b", "a"]}
+              options={["Medina", "Dammam", "Abha"]}
               name="shipping-to"
             />
           }

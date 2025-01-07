@@ -52,7 +52,7 @@ export default function PageLoader() {
           <Image src="/imgs/logo.svg" fill alt="nitro" />
         </div>
       </div>
-      <div className="cutter absolute top-[53%]  inset-x-0 bg-secondary-orange  h-1 -translate-y-1/2 " />
+      <div className="cutter absolute top-[53%]  inset-x-0 bg-secondary-orange  h-[1px] -translate-y-1/2 " />
     </div>
   );
 }

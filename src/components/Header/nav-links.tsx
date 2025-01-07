@@ -20,23 +20,25 @@ export default function NavLinks({ className, ...rest }: propType) {
 
   /*-------------------------------------------*/
   const { contextSafe } = useGSAP({ scope: ref });
-  const mouseEnterLinkHandler = contextSafe((e) => {
-    setActive(false);
-    const parentRect = e.target.parentElement.getBoundingClientRect();
-    const rect = e.target.getBoundingClientRect();
-    const width = rect.width;
-    const height = rect.height;
-    const top = rect.top - parentRect.top;
-    const left = rect.left - parentRect.left;
-    gsap.to(".overlay", {
-      width,
-      height,
-      top,
-      left,
-      opacity: 1,
-      duration: 0.3,
-    });
-  });
+  const mouseEnterLinkHandler = contextSafe(
+    (e: React.MouseEvent<HTMLDivElement>) => {
+      setActive(false);
+      const parentRect = e.target.parentElement.getBoundingClientRect();
+      const rect = e.target.getBoundingClientRect();
+      const width = rect.width;
+      const height = rect.height;
+      const top = rect.top - parentRect.top;
+      const left = rect.left - parentRect.left;
+      gsap.to(".overlay", {
+        width,
+        height,
+        top,
+        left,
+        opacity: 1,
+        duration: 0.3,
+      });
+    }
+  );
   const mouseLeaveLinkHandler = contextSafe(() => {
     setActive(true);
     gsap.to(".overlay", {

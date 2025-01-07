@@ -22,6 +22,6 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 3- add buttons hover effects
 
-## deploymeny
+## deployment
 
 https://ra3d-nitro-igsa.vercel.app/
